@@ -1,0 +1,18 @@
+/* 
+colour scheme
+mint green: #3feee6
+dark marine: #55bcc9
+baby blue: #97caef
+light mint blue: #cafafe
+*/
+h1 {
+    color:#97CAEF;
+    font-size: 4em;
+}
+h2 {
+    color:#55bcc9;
+    font-size: 2em;
+}
+h3 {
+    color: #97caef;
+}
