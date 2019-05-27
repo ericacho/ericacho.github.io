@@ -5,9 +5,19 @@ dark marine: #55bcc9
 baby blue: #97caef
 light mint blue: #cafafe
 */
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+body {
+    text-align: center;
+    font-family: "Open Sans";
+    
+}
 h1 {
     color:#97CAEF;
     font-size: 4em;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Lobster"
 }
 h2 {
     color:#55bcc9;
@@ -15,4 +25,22 @@ h2 {
 }
 h3 {
     color: #97caef;
+}
+#notes {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.8em;
+}
+#writing {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.8em;
+}
+a:link,
+a:visited {
+    color:#55bcc9;
+    text-decoration: none;
+}
+a:hover {
+color:lightcoral;
 }
