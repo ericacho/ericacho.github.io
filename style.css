@@ -10,22 +10,23 @@ light mint blue: #cafafe
 body {
     text-align: center;
     font-family: "Open Sans";
-    background-color:E5D0E3;
+    background-color: #cae9f5;
+    color:#6779c9;
 
 }
 h1 {
-    color:#97CAEF;
+    color:rgb(124, 186, 230);
     font-size: 4em;
     text-align: center;
     text-decoration: underline;
     font-family: "Lobster"
 }
 h2 {
-    color:#55bcc9;
+    color:#62d6e6;
     font-size: 2em;
 }
 h3 {
-    color: #97caef;
+    color: #7ebeec;
 }
 #notes {
     font-weight: bold;
@@ -39,9 +40,9 @@ h3 {
 }
 a:link,
 a:visited {
-    color:#55bcc9;
+    color:#43b6da;
     text-decoration: none;
 }
 a:hover {
-color:lightcoral;
+color:rgb(236, 171, 204);
 }
