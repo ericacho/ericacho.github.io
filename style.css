@@ -69,3 +69,12 @@ color:rgb(236, 171, 204);
     text-decoration: underline;
     background-color: lightcyan;
 }
+
+canvas {
+    background-color: white;
+    border-style: solid;
+}
+
+section {
+    text-align: center;
+}
