@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="../style.css">
         <script src="drawRuler.js"></script>
-        <script src="drawName.js"></script>
+        <script src="drawMickey.js"></script>
         <script>
             var canvas;
             var ctx;
@@ -15,24 +15,20 @@
                 canvas = document.getElementById("myCanvas")
                 // Setting canvas' context to 2D
                 ctx = canvas.getContext("2d");
-                drawRuler(5)
+                drawMickey();
+                drawRuler(5);
             }
         </script>
     </head>
     <body>
         <header>
-            <h1>Drawing</h1>
+            <h1>Mickey</h1>
         </header>
         <nav>
-            <a href="../index.html">Homepage</a>
-            <br>
-            <a href="name.html">Name</a>
-            <br>
-            <a href="face.html">Face</a>
-            <br>
-            <a href="mickey.html">Mickey Mouse</a>
+            <a href="drawing.html">Drawings</a>
         </nav>
         <section>
+            <canvas id="myCanvas" width="1200" height="700"></canvas>
         </section>
         <footer>
             <p>&copy; 2019</p>
