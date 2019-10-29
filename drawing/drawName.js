@@ -1,5 +1,7 @@
-function drawName() {
-    //e 
+function drawName(x,y) {
+    ctx.save();
+    ctx.translate(x,y);
+    //e
     //ctx. fillRect(x,y,w,h)
     ctx.fillStyle = "black"
     ctx.fillRect(0,UNIT,UNIT,UNIT);
@@ -54,4 +56,5 @@ function drawName() {
     ctx.fillRect(42*UNIT,0,2*UNIT,UNIT);
     ctx.fillRect(42*UNIT, 4*UNIT, 2*UNIT,UNIT);
     ctx.fillRect(44*UNIT, UNIT, UNIT, 3*UNIT);
+    ctx.restore();
 }
