@@ -15,75 +15,21 @@ function drawMickey1(x,y) {
     ctx.restore();
 }
 
-// function drawMickey2() {
-//     //whole face copied from Mickey 1
-//         ctx.fillStyle = "black"
-//         ctx.fillRect(0, 6 * UNIT, UNIT, 5 * UNIT);
-//         ctx.fillRect(UNIT, 5 * UNIT, UNIT, 7 * UNIT);
-//         ctx.fillRect(2 * UNIT, 5 * UNIT, UNIT, 7 * UNIT);
-//         ctx.fillRect(3 * UNIT, 5 * UNIT, UNIT, 7 * UNIT);
-//         ctx.fillRect(4 * UNIT, 6 * UNIT, UNIT, 5 * UNIT);
-//         ctx.fillRect(12 * UNIT, 6 * UNIT, UNIT, 3 * UNIT);
-//         ctx.fillRect(14 * UNIT, 6 * UNIT, UNIT, 2 * UNIT);
-//         ctx.fillRect(16 * UNIT, 7 * UNIT, 2 * UNIT, 2 * UNIT);
-//         ctx.fillRect(17 * UNIT, 6 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(9 * UNIT, 10 * UNIT, UNIT, 3 * UNIT);
-//         ctx.fillRect(10 * UNIT, 11 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(10 * UNIT, 13 * UNIT, 2 * UNIT, UNIT);
-//         ctx.fillRect(11 * UNIT, 12 * UNIT, 2 * UNIT, UNIT);
-//         ctx.fillRect(4 * UNIT, UNIT, UNIT, 4 * UNIT);
-//         ctx.fillRect(5 * UNIT, 0, UNIT, 11 * UNIT);
-//         ctx.fillRect(7 * UNIT, 0, 2 * UNIT, 8 * UNIT);
-//         ctx.fillRect(6 * UNIT, 0, UNIT, 9 * UNIT);
-//         ctx.fillRect(9 * UNIT, UNIT, UNIT, 8 * UNIT);
-//         ctx.fillRect(10 * UNIT, 3 * UNIT, UNIT, 2 * UNIT);
-//         ctx.fillRect(11 * UNIT, 3 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(12 * UNIT, 4 * UNIT, 2 * UNIT, UNIT);
-//         ctx.fillRect(13 * UNIT, 5 * UNIT, UNIT, UNIT);
-//         ctx.fillStyle = "#F5AA41";
-//         ctx.fillRect(6 * UNIT, 9 * UNIT, UNIT, 3 * UNIT);
-//         ctx.fillRect(7 * UNIT, 8 * UNIT, UNIT, 5 * UNIT);
-//         ctx.fillRect(8 * UNIT, 8 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(8 * UNIT, 10 * UNIT, UNIT, 3 * UNIT);
-//         ctx.fillRect(9 * UNIT, 9 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(10 * UNIT, 5 * UNIT, 2 * UNIT, 6 * UNIT);
-//         ctx.fillRect(11 * UNIT, 4 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(12 * UNIT, 5 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(14 * UNIT, 5 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(13 * UNIT, 6 * UNIT, UNIT, 2 * UNIT);
-//         ctx.fillRect(11 * UNIT, 10 * UNIT, 4 * UNIT, 2 * UNIT);
-//         ctx.fillRect(13 * UNIT, 9 * UNIT, 3 * UNIT, 2 * UNIT);
-//         ctx.fillRect(14 * UNIT, 8 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(9 * UNIT, 13 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(10 * UNIT, 14 * UNIT, 2 * UNIT, UNIT);
-//         ctx.fillRect(12 * UNIT, 13 * UNIT, UNIT, UNIT);
-//         ctx.fillStyle = "#AB2622"
-//         ctx.fillRect(5 * UNIT, 11 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(6 * UNIT, 12 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(7 * UNIT, 13 * UNIT, 2 * UNIT, UNIT);
-//         ctx.fillRect(10 * UNIT, 14 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(13 * UNIT, 14 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(14 * UNIT, 12 * UNIT, UNIT, 2 * UNIT);
-//         ctx.fillRect(15 * UNIT, 12 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(16 * UNIT, 11 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(17 * UNIT, 9 * UNIT, UNIT, 2 * UNIT);
-//         ctx.fillRect(16 * UNIT, 8 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(14 * UNIT, 8 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(13 * UNIT, 9 * UNIT, UNIT, UNIT);
-//         ctx.fillRect(9 * UNIT, 9 * UNIT, UNIT, UNIT);
-//         ctx.fillStyle="#ED3833"
-//         ctx.fillRect(11*UNIT, 12*UNIT, UNIT, UNIT);
+function drawMickey2() {
+    ctx.fillStyle = "black"
+    ctx.fillRect(0, 18 * UNIT, UNIT, UNIT);
+    ctx.fillRect(UNIT, 6 * UNIT, 6 * UNIT, 5 * UNIT);
+    ctx.fillRect(2 * UNIT, 5 * UNIT, 3 * UNIT, UNIT);
+    ctx.fillRect(2 * UNIT, 11 * UNIT, 3 * UNIT,  UNIT);
+    ctx.fillRect(UNIT, 6 * UNIT, 6 * UNIT, 5 * UNIT);
+    ctx.fillRect(6 * UNIT, 0, 4 * UNIT, 8 * UNIT);
+    ctx.fillRect(5 * UNIT, UNIT, UNIT, 4 * UNIT);
+    ctx.fillRect(10 * UNIT, UNIT, UNIT, 8 * UNIT);
+    ctx.fillRect(7 * UNIT, 8 * UNIT, UNIT, UNIT);
+    ctx.fillRect(11 * UNIT, 3 * UNIT, 2 * UNIT, UNIT);
+    ctx.fillRect(11 * UNIT, 4 * UNIT,  UNIT, UNIT);
 
-//         //chest and arm
-//         ctx.fillStyle="black"
-//         ctx.fillRect(9 * UNIT, 15 * UNIT, 8 * UNIT, 2 * UNIT);
-//         ctx.fillRect(7 * UNIT, 14 * UNIT, 3 * UNIT, 2 * UNIT);
-//         ctx.fillRect(6 * UNIT, 15 * UNIT, 2 * UNIT, 2 * UNIT);
-//         ctx.fillRect(13 * UNIT, 14 * UNIT, 2 * UNIT, UNIT);
-//         ctx.fillRect(5 * UNIT, 16 * UNIT, 2 * UNIT, 3 * UNIT);
-//         ctx.fillRect(6 * UNIT, 18 * UNIT, 2 * UNIT, 2 * UNIT);
-//         ctx.fillRect(8 * UNIT, 17 * UNIT, UNIT, UNIT);
-// }
+}
 
 
 
