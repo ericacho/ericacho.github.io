@@ -28,6 +28,22 @@ function drawMickey2() {
     ctx.fillRect(7 * UNIT, 8 * UNIT, UNIT, UNIT);
     ctx.fillRect(11 * UNIT, 3 * UNIT, 2 * UNIT, UNIT);
     ctx.fillRect(11 * UNIT, 4 * UNIT,  UNIT, UNIT);
+    ctx.fillRect(13 * UNIT, 4 * UNIT, 2 * UNIT,   UNIT);
+    ctx.fillRect(14 * UNIT, 5 * UNIT,  UNIT,  UNIT);
+    ctx.fillRect(13 * UNIT, 6 * UNIT, UNIT, 3 * UNIT);
+    ctx.fillRect(15 * UNIT, 6 * UNIT,  UNIT, 2 * UNIT);
+    ctx.fillRect(17 * UNIT, 7 * UNIT, 2 * UNIT, 2 * UNIT);
+    ctx.fillRect(18 * UNIT, 6 * UNIT,  UNIT,  UNIT);
+    ctx.fillRect(10 * UNIT, 10 * UNIT, UNIT, 3 * UNIT);
+    ctx.fillRect(11 * UNIT, 11 * UNIT, UNIT,  UNIT);
+    ctx.fillRect(12 * UNIT, 12 * UNIT, 2 * UNIT,  UNIT);
+    ctx.fillRect(11 * UNIT, 13 * UNIT, 2 * UNIT,  UNIT);
+    ctx.fillRect(7 * UNIT, 14 * UNIT, 3 * UNIT, 2 * UNIT);
+    ctx.fillRect(6 * UNIT, 15 * UNIT, 2 * UNIT, 2 * UNIT);
+    ctx.fillRect(5 * UNIT, 16 * UNIT, 2 * UNIT, 3 * UNIT);
+    ctx.fillRect(6 * UNIT, 19 * UNIT, UNIT,  UNIT);
+    ctx.fillRect(7 * UNIT, 8 * UNIT, UNIT, UNIT);
+
 
 }
 
