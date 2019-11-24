@@ -31,7 +31,30 @@ function drawMickey2(x,y,s) {
 
 function drawMickey2Clothes(){
     ctx.fillStyle = "#ED3833"
-    ctx.fillRect(9 * UNIT, 18 * UNIT, 2 * UNIT, 5 * UNIT);
+    ctx.fillRect(8 * UNIT, 18 * UNIT, 3 * UNIT, 4 * UNIT);//askk victor why x-coordiate is 8 because it is 9 but when I do 9 it actually does 10 on the drawing. same with all in this section.
+    ctx.fillRect(7 * UNIT, 19 * UNIT, UNIT, 2 * UNIT);
+    ctx.fillRect(11 * UNIT, 21 * UNIT, 3 * UNIT, UNIT);
+    ctx.fillRect(8 * UNIT, 22 * UNIT, 2 * UNIT, UNIT);
+    ctx.fillRect(12 * UNIT, 22 * UNIT, UNIT, UNIT);
+    ctx.fillStyle = "#AB2622"
+    ctx.fillRect(8 * UNIT, 17 * UNIT, 4 * UNIT, UNIT);
+    ctx.fillRect(7 * UNIT, 18 * UNIT, UNIT,UNIT);
+    ctx.fillRect(6 * UNIT, 19 * UNIT, UNIT, 2 * UNIT);
+    ctx.fillRect(7 * UNIT, 21 * UNIT, UNIT, 2 * UNIT);
+    ctx.fillRect(6 * UNIT, 22 * UNIT, UNIT, UNIT);
+    ctx.fillRect(10 * UNIT, 22 * UNIT, 2 * UNIT, UNIT);
+    ctx.fillRect(9 * UNIT, 23 * UNIT, UNIT, UNIT);
+    ctx.fillRect(13 * UNIT,22 * UNIT, 2 * UNIT,  UNIT);
+    ctx.fillRect(14 * UNIT, 21 * UNIT, 2 * UNIT, UNIT);
+    ctx.fillRect(15 * UNIT, 20 * UNIT, UNIT, UNIT);
+    ctx.fillRect(13 * UNIT, 23 * UNIT, UNIT,  UNIT);
+    ctx.fillRect(13 * UNIT, 17 * UNIT, UNIT, UNIT);
+    ctx.fillRect(15 * UNIT, 17 * UNIT,  UNIT, UNIT);
+    ctx.fillRect(11 * UNIT, 20 * UNIT,  UNIT, UNIT);
+    ctx.fillRect(13 * UNIT, 20 * UNIT, UNIT,UNIT);
+    ctx.fillStyle = "#FEF851"
+    ctx.fillRect(12 * UNIT, 18 * UNIT,  UNIT, 2 * UNIT);
+    ctx.fillRect(14 * UNIT, 18 * UNIT,  UNIT, 2 * UNIT);
 }
 
 function drawMickey2BlackDetails(){
@@ -71,6 +94,15 @@ function drawMickey2BlackDetails(){
     ctx.fillRect(13 * UNIT, 17 * UNIT, UNIT, UNIT);
     ctx.fillRect(15 * UNIT, 17 * UNIT,  UNIT, UNIT);
     ctx.fillRect(12 * UNIT, 18 * UNIT, UNIT, 2 * UNIT);
+    ctx.fillRect(14 * UNIT, 18 * UNIT, UNIT, 2 * UNIT);
+    ctx.fillRect(16 * UNIT, 18 * UNIT,  UNIT, 2 * UNIT);
+    ctx.fillRect(13 * UNIT, 20 * UNIT, UNIT, UNIT);
+    ctx.fillRect(15 * UNIT, 20 * UNIT, UNIT,  UNIT);
+    ctx.fillRect(8 * UNIT, 23 * UNIT, 2 * UNIT, 2 * UNIT);//legs
+    ctx.fillRect(8 * UNIT, 25 * UNIT,  UNIT, 3 * UNIT);
+    ctx.fillRect(7 * UNIT, 25 * UNIT, UNIT,  UNIT);
+    ctx.fillRect(12 * UNIT, 23 * UNIT, 2 * UNIT, 2 * UNIT);
+    ctx.fillRect(11 * UNIT, 25 * UNIT, 2 * UNIT, 2 * UNIT);
     ctx.fillStyle = "#ED3833" //mouth
     ctx.fillRect(11 * UNIT, 12 * UNIT, UNIT, UNIT);
 }
