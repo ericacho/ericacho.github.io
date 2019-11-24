@@ -26,6 +26,7 @@ function drawMickey2(x,y,s) {
     drawMickey1FaceColour();
     drawMickey1FaceOutline();
     drawMickey2Clothes();
+    drawMickey2Shoes();
     ctx.translate(-UNIT,0);
 }
 
@@ -55,6 +56,52 @@ function drawMickey2Clothes(){
     ctx.fillStyle = "#FEF851"
     ctx.fillRect(12 * UNIT, 18 * UNIT,  UNIT, 2 * UNIT);
     ctx.fillRect(14 * UNIT, 18 * UNIT,  UNIT, 2 * UNIT);
+}
+
+function drawMickey2Shoes(){ //this one is also shifted
+    ctx.fillStyle = "#AB2622"
+ctx.fillRect(UNIT, 24 * UNIT, 4 * UNIT,  UNIT);
+ctx.fillRect(0 , 25 * UNIT, UNIT, 3 * UNIT); //When I put in 0 it actually appears on the drawing as 1 and the actual unit should be 1 but i PUT 0 to make it look right.
+ctx.fillRect( UNIT, 28 * UNIT, UNIT, 2*UNIT);
+ctx.fillRect(2 * UNIT, 29 * UNIT, 3 * UNIT, UNIT);
+ctx.fillRect(2 * UNIT, 30 * UNIT, UNIT, UNIT);
+ctx.fillRect(4 * UNIT, 30 * UNIT, UNIT, UNIT);
+ctx.fillRect(3 * UNIT, 27 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(UNIT, 25 * UNIT, UNIT, UNIT);
+ctx.fillRect(2 * UNIT, 26 * UNIT, UNIT, UNIT);
+ctx.fillRect(5 * UNIT, 25 * UNIT, UNIT, UNIT);
+ctx.fillRect(6 * UNIT, 26 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(7 * UNIT, 28 * UNIT, UNIT, 3 * UNIT);
+ctx.fillRect(8 * UNIT, 29 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(9 * UNIT, 28 * UNIT, UNIT, UNIT);
+ctx.fillRect(10 * UNIT, 27 * UNIT, UNIT, UNIT);
+ctx.fillRect(11 * UNIT, 28 * UNIT, UNIT, UNIT);
+ctx.fillRect(12 * UNIT, 27 * UNIT, 3 * UNIT, UNIT);
+ctx.fillRect(15 * UNIT, 28 * UNIT, UNIT, UNIT);
+ctx.fillRect(16 * UNIT, 29 * UNIT, UNIT, 2 * UNIT);
+ctx.fillStyle = "#F5AA41"
+ctx.fillRect(UNIT, 26 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(2 * UNIT, 27 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(3 * UNIT, 30 * UNIT, UNIT, UNIT);
+ctx.fillRect(4 * UNIT, 28 * UNIT, UNIT, UNIT);
+ctx.fillRect(5 * UNIT, 29 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(6 * UNIT, 28 * UNIT, UNIT, UNIT);
+ctx.fillRect(5 * UNIT, 26 * UNIT, UNIT, UNIT);
+ctx.fillRect(4 * UNIT, 25 * UNIT, UNIT, UNIT);
+ctx.fillRect(9 * UNIT, 29 * UNIT, 2 * UNIT, 2 * UNIT);//right foot inside darker yellow find right foot outline to put them together as a section by itself to copy and paste for future mickeys.
+ctx.fillRect(10 * UNIT, 28 * UNIT, UNIT, UNIT);
+ctx.fillRect(11 * UNIT, 27 * UNIT, UNIT, UNIT);
+ctx.fillRect(12 * UNIT, 28 * UNIT, UNIT, UNIT);
+ctx.fillRect(14 * UNIT, 28 * UNIT, UNIT, UNIT);
+ctx.fillRect(15 * UNIT, 29 * UNIT, UNIT, 2 * UNIT);
+ctx.fillStyle = "#FEF851"
+ctx.fillRect(2 * UNIT, 25 * UNIT, 2 * UNIT, UNIT);
+ctx.fillRect(3 * UNIT, 26 * UNIT, 2 * UNIT, UNIT);
+ctx.fillRect(4 * UNIT, 27 * UNIT, 2 * UNIT, UNIT);
+ctx.fillRect(5 * UNIT, 28 * UNIT,  UNIT, UNIT);
+ctx.fillRect(6 * UNIT, 29 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(11 * UNIT, 29 * UNIT, 4 * UNIT, 2 * UNIT);//right foot bright yellow inside starts here
+ctx.fillRect(13 * UNIT, 28 * UNIT, UNIT, UNIT);
 }
 
 function drawMickey2BlackDetails(){
