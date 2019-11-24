@@ -2,7 +2,7 @@ function drawMickey1(x,y,s) {
     ctx.save();
     ctx.scale(s, s);
     ctx.translate(x*UNIT,y*UNIT);
-    // face colour: #F5AA41 outline of face: #AB2622 main colour of pants: #ED3833 shadow of shoes (dark yellow): #F5AA41 main colour of shoes: #FEF851 mouth: #ED3833
+    // face colour: #F5AA41 outline of face: #AB2622 main colour of pants: #ED3833 shadow of shoes (dark yellow): #F5AA41 main colour of shoes: #FEF851 mouth: #ED3833 gloves grey: #AAAAAA gloves white: #FFFFFF
     ctx.fillStyle = "black";
     //ctx. fillRect(x,y,w,h)
     drawMickey1LeftEar();
@@ -29,6 +29,83 @@ function drawMickey2(x,y,s) {
     drawMickey2Shoes();
     ctx.translate(-UNIT,0);
 }
+
+function drawMickey3(x,y,s) {
+    ctx.save();
+    ctx.scale(s, s);
+    ctx.translate(x*UNIT, y*UNIT);
+    ctx.fillStyle = "black"
+    ctx.translate(2 * UNIT,0)
+    drawMickey1LeftEar();
+    drawMickey1BackHead();
+    drawMickey1FaceDetails();
+    drawMickey1FaceOutline();
+    drawMickey1FaceColour();
+    ctx.translate(-2 * UNIT, 0)
+    drawMickey3Body();
+    drawMickey3Gloves();
+    drawMickey3Clothes();
+    drawMickey3Shoes();
+
+}
+
+function drawMickey3Body(){
+    ctx.fillStyle = "black"
+    ctx.fillRect(4 * UNIT, 14 * UNIT, 3 * UNIT, 3 * UNIT);
+    ctx.fillRect(5 * UNIT, 13 * UNIT, 4 * UNIT, 2 * UNIT);
+    ctx.fillRect(8 * UNIT, 14 * UNIT, 3 * UNIT, 4 * UNIT);
+    ctx.fillRect(11 * UNIT, 15 * UNIT, 3 * UNIT, 3 * UNIT);
+    ctx.fillRect(14 * UNIT, 15 * UNIT, UNIT, 2 * UNIT);
+    ctx.fillRect(7 * UNIT, 16 * UNIT, UNIT, UNIT);
+    ctx.fillRect(4 * UNIT, 18 * UNIT, UNIT, 3 * UNIT);
+    ctx.fillRect(5 * UNIT, 17 * UNIT, UNIT,UNIT);
+    ctx.fillRect(5 * UNIT, 20 * UNIT, UNIT, 2 * UNIT);
+    ctx.fillRect(6 * UNIT, 18 * UNIT, 2 * UNIT, 2 * UNIT);
+    ctx.fillRect(3 * UNIT, 19 * UNIT, UNIT, 2 * UNIT);
+    ctx.fillRect(9 * UNIT, 18 * UNIT, UNIT, 2 * UNIT);
+    ctx.fillRect(8 * UNIT, 20 * UNIT,  UNIT, UNIT);
+    ctx.fillRect(2 * UNIT, 17 * UNIT,  UNIT, 3 * UNIT);
+    ctx.fillRect(UNIT, 16 * UNIT, UNIT, 2 * UNIT);
+    ctx.fillRect(0, 14 * UNIT,UNIT, 2 * UNIT);
+    ctx.fillRect(14 * UNIT, 18 * UNIT, 2 * UNIT, 3 * UNIT);
+    ctx.fillRect(15 * UNIT, 17 * UNIT, UNIT, UNIT);
+    ctx.fillRect(16 * UNIT, 14 * UNIT, UNIT, 6 * UNIT);
+    ctx.fillRect(15 * UNIT, 14 * UNIT, UNIT, UNIT);
+    ctx.fillRect(17 * UNIT, 18 * UNIT, 2 * UNIT, UNIT);
+    ctx.fillRect(17 * UNIT, 12 * UNIT, 2 * UNIT, UNIT);
+    ctx.fillRect(17 * UNIT, 13 * UNIT, UNIT, UNIT);
+    ctx.fillRect(19 * UNIT, 13 * UNIT, 3 * UNIT, UNIT);
+    ctx.fillRect(21 * UNIT, 14 * UNIT,  UNIT, UNIT);
+    ctx.fillRect(20 * UNIT, 15 * UNIT, UNIT, 3 * UNIT);
+    ctx.fillRect(6 * UNIT, 24 * UNIT, 3 * UNIT, 2 * UNIT);
+    ctx.fillRect(6 * UNIT, 26 * UNIT, 2 * UNIT, UNIT);
+    ctx.fillRect(5 * UNIT, 25 * UNIT, UNIT, UNIT);
+}
+
+function drawMickey3Gloves(){
+ctx.fillStyle = "#AAAAAA"
+ctx.fillRect(17 * UNIT, 14 * UNIT, UNIT, 4 * UNIT);
+ctx.fillRect(18 * UNIT, 13 * UNIT, UNIT,  UNIT);
+ctx.fillRect(17 * UNIT, 17 * UNIT, 3 * UNIT, UNIT);
+ctx.fillRect(20 * UNIT, 14 * UNIT, UNIT, UNIT);
+ctx.fillRect(15 * UNIT, 15 * UNIT, UNIT, 2 * UNIT);
+ctx.fillStyle = "#FFFFFF"
+ctx.fillRect(18 * UNIT, 14 * UNIT, 2 * UNIT, 3 * UNIT);
+}
+
+function drawMickey3Clothes(){
+
+}
+
+
+
+function drawMickey3Shoes(){
+
+}
+
+
+
+
 
 function drawMickey2Clothes(){
     ctx.fillStyle = "#ED3833"
@@ -187,6 +264,8 @@ function drawMickey1FaceDetails(){
     ctx.fillRect(10 * UNIT, 11 * UNIT, UNIT, UNIT);
     ctx.fillRect(10 * UNIT, 13 * UNIT, 2 * UNIT, UNIT);
     ctx.fillRect(11 * UNIT, 12 * UNIT, 2 * UNIT, UNIT);
+    ctx.fillStyle = "#ED3833"
+    ctx.fillRect(10 * UNIT, 12 * UNIT, UNIT, UNIT);
 }
 
 function drawMickey1FaceColour(){
