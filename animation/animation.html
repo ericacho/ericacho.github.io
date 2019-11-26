@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var canvas;
+            var ctx; 
+            var requestId;
+            var positionX = 0;
+            const UNIT = 10;
+            window.onload = init;
+            function init() {
+                canvas = document.getElementById("myCanvas");
+                ctx = canvas.getContext("2d");
+                requestId = requestAnimationFrame(animationLoop);
+            }
+            function animationLoop() {
+                ctx.clearRect(0,0,canvas.width,canvas.height);
+                ctx.fillRect(positionX, 5 * UNIT, UNIT, UNIT);
+                positionX +=3;
+                requestId = requestAnimationFrame(animationLoop);
+            }
+            </script>
+<title>Animation</title>
+<link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header>
+<h1> Animation </h1>
+        </header>
+        <nav>
+<a href="../index.html">Go back to Homepage</a>
+<br>
+<br>
+<a href="slide.html">Slide Animation</a>
+        </nav>
+        <section>
+<canvas id="myCanvas" width="800" height="500"></canvas>
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</html>

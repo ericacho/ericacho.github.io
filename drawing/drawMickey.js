@@ -28,6 +28,7 @@ function drawMickey2(x,y,s) {
     drawMickey2Clothes();
     drawMickey2Shoes();
     ctx.translate(-UNIT,0);
+    ctx.restore();
 }
 
 function drawMickey3(x,y,s) {
@@ -46,6 +47,7 @@ function drawMickey3(x,y,s) {
     drawMickey3Gloves();
     drawMickey3Clothes();
     drawMickey3Shoes();
+    ctx.restore();
 
 }
 
@@ -94,7 +96,26 @@ ctx.fillRect(18 * UNIT, 14 * UNIT, 2 * UNIT, 3 * UNIT);
 }
 
 function drawMickey3Clothes(){
-
+ctx.fillStyle = "#AB2622"
+ctx.fillRect(10 * UNIT, 18 * UNIT, 4 *  UNIT, UNIT);
+ctx.fillRect(13 * UNIT, 18 * UNIT, UNIT, 4 * UNIT);
+ctx.fillRect(12 * UNIT, 21 * UNIT, 2 * UNIT,  UNIT);
+ctx.fillRect(6 * UNIT, 17 * UNIT, 2 * UNIT, UNIT);
+ctx.fillRect(9 * UNIT, 22 * UNIT, 4 * UNIT, UNIT);
+ctx.fillRect(6 * UNIT, 23 * UNIT, 4 * UNIT, UNIT);
+ctx.fillRect(5 * UNIT, 22 * UNIT, UNIT, UNIT);
+ctx.fillRect(6 * UNIT, 21 * UNIT, UNIT, UNIT);
+ctx.fillRect(2 * UNIT, 24 * UNIT, 3 * UNIT, UNIT);
+ctx.fillRect(UNIT, 25 * UNIT, 2 * UNIT, 3 * UNIT);
+ctx.fillRect(5 * UNIT, 26 * UNIT, UNIT, UNIT);
+ctx.fillRect(6 * UNIT, 27 * UNIT, UNIT, UNIT);
+ctx.fillRect(7 * UNIT, 28 * UNIT, UNIT, UNIT);
+ctx.fillRect(8 * UNIT, 29 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect( UNIT, 28 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(3 * UNIT, 28 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(2 * UNIT, 15 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(2 * UNIT, 30 * UNIT, UNIT, UNIT);
+ctx.fillRect(4 * UNIT, 30 * UNIT, UNIT, UNIT);
 }
 
 

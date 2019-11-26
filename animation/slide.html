@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../drawing/drawMickey.js"></script>
+        <script>
+            var canvas;
+            var ctx; 
+            var requestId;
+            var positionX = 0;
+            const UNIT = 10;
+            window.onload = init;
+            function init() {
+                canvas = document.getElementById("myCanvas");
+                ctx = canvas.getContext("2d");
+                requestId = requestAnimationFrame(animationLoop);
+            }
+            function animationLoop() {
+                ctx.clearRect(0,0,canvas.width,canvas.height);
+                drawBackground();
+                drawMickey1(positionX,14,1);
+                changePositionX();                //ctx.fillRect(positionX, 5 * UNIT, UNIT, UNIT);
+                //positionX +=3;
+                requestId = requestAnimationFrame(animationLoop);
+            }
+            function drawBackground() {
+                //entire background
+                ctx.fillStyle = "#98ffcc"
+                ctx.fillRect(0,0,canvas.width, canvas.height)
+                //ground
+                ctx.fillStyle = "#00008b"
+                ctx.fillRect(0,canvas.height-50,canvas.width,50);
+            }
+            function changePositionX() {
+                positionX += 0.5;
+            }
+            </script>
+<title>Slide Animation</title>
+<link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header>
+<h1> Animation </h1>
+        </header>
+        <nav>
+<a href="animation.html">Go Back to Animations</a>
+        </nav>
+        <section>
+<canvas id="myCanvas" width="800" height="500"></canvas>
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</html>
