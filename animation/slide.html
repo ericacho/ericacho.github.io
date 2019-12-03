@@ -2,6 +2,7 @@
 <html>
     <head>
         <script src="../drawing/drawMickey.js"></script>
+        <script src="../drawing/drawName.js"></script>
         <script>
             var canvas;
             var ctx; 
@@ -17,6 +18,7 @@
             function animationLoop() {
                 ctx.clearRect(0,0,canvas.width,canvas.height);
                 drawBackground();
+                drawName(0,0,0.3);
                 drawMickey1(positionX,14,1);
                 changePositionX();                //ctx.fillRect(positionX, 5 * UNIT, UNIT, UNIT);
                 //positionX +=3;
@@ -31,7 +33,11 @@
                 ctx.fillRect(0,canvas.height-50,canvas.width,50);
             }
             function changePositionX() {
-                positionX += 0.5;
+                if (positionX >= canvas.width/UNIT) {
+                    positionX = -18;
+                } else {
+                    positionX += 0.5;
+                }
             }
             </script>
 <title>Slide Animation</title>

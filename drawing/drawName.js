@@ -1,6 +1,8 @@
-function drawName(x,y) {
+function drawName(x,y,s) {
     ctx.save();
-    ctx.translate(x,y);
+    // ctx.translate(x,y,s);
+    ctx.scale(s, s);
+    ctx.translate(x*UNIT,y*UNIT);
     //e
     //ctx. fillRect(x,y,w,h)
     ctx.fillStyle = "black"

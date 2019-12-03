@@ -13,12 +13,7 @@
                 ctx = canvas.getContext("2d");
                 requestId = requestAnimationFrame(animationLoop);
             }
-            function animationLoop() {
-                ctx.clearRect(0,0,canvas.width,canvas.height);
-                ctx.fillRect(positionX, 5 * UNIT, UNIT, UNIT);
-                positionX +=3;
-                requestId = requestAnimationFrame(animationLoop);
-            }
+
             </script>
 <title>Animation</title>
 <link rel="stylesheet" href="../style.css">

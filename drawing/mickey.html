@@ -17,10 +17,19 @@
                 ctx = canvas.getContext("2d");
                 // drawMickey1(0,0,1);
                 // drawMickey1(19,19);
-                drawMickey1(0,0,1);
-                drawMickey2(20,0,1);
-                drawMickey3(40, 0, 1);
-                // drawRuler(5);
+                // drawMickey1(0,0,1);
+                // drawMickey2(20,0,1);
+                // drawMickey3(0, 0, 1);
+                drawBackground();
+                drawMickey4(0,0,1)
+                drawRuler(5);
+            }
+            function drawBackground() {
+            ctx.fillStyle = "#98ffcc"
+                ctx.fillRect(0,0,canvas.width, canvas.height)
+                //ground
+                ctx.fillStyle = "#00008b"
+                ctx.fillRect(0,canvas.height-50,canvas.width,50);
             }
         </script>
     </head>

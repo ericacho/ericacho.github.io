@@ -32,24 +32,58 @@ function drawMickey2(x,y,s) {
 }
 
 function drawMickey3(x,y,s) {
-    ctx.save();
+   ctx.save();
     ctx.scale(s, s);
     ctx.translate(x*UNIT, y*UNIT);
     ctx.fillStyle = "black"
-    ctx.translate(2 * UNIT,0)
+    ctx.translate(2 * UNIT,0);
     drawMickey1LeftEar();
     drawMickey1BackHead();
     drawMickey1FaceDetails();
     drawMickey1FaceOutline();
     drawMickey1FaceColour();
-    ctx.translate(-2 * UNIT, 0)
+    ctx.translate(-2 * UNIT, 0);
     drawMickey3Body();
     drawMickey3Gloves();
     drawMickey3Clothes();
     drawMickey3Shoes();
     ctx.restore();
+}
+
+function drawMickey4(x,y,s) {
+    ctx.save();
+    ctx.scale(s, s);
+    ctx.translate(x*UNIT, y*UNIT);
+    ctx.fillStyle = "black"
+    ctx.translate(3 * UNIT, UNIT);
+    drawMickey1LeftEar();
+    drawMickey1BackHead();
+    drawMickey1FaceDetails();
+    drawMickey1FaceOutline();
+    drawMickey1FaceColour();
+    ctx.translate(-3 * UNIT, -UNIT);//idk what is happening here 
+drawMickey4Body();
+drawMickey3Gloves();
 
 }
+
+function drawMickey4Body(){
+ctx.fillStyle = "black"
+ctx.fillRect(8 * UNIT, 14 * UNIT, 2 * UNIT,  UNIT);
+ctx.fillRect(7 * UNIT, 15 * UNIT, 5 * UNIT, 3 * UNIT);
+ctx.fillRect(12 * UNIT, 16 * UNIT, 4 * UNIT,  UNIT);
+ctx.fillRect(12 * UNIT, 17 * UNIT, 3 * UNIT,  UNIT);
+ctx.fillRect(9 * UNIT, 18 * UNIT, 5 * UNIT,  UNIT);
+ctx.fillRect(7 * UNIT, 18 * UNIT, UNIT,  UNIT);
+// ctx.fillRect(16 * UNIT, 17 * UNIT, 3 * UNIT,  UNIT);
+// ctx.fillRect(18 * UNIT, 18 * UNIT, UNIT,  UNIT);
+// ctx.fillRect(17 * UNIT, 19 * UNIT, UNIT, 3 * UNIT);
+// ctx.fillRect(14 * UNIT, 22 * UNIT, 3 * UNIT,  UNIT);
+}
+
+
+
+
 
 function drawMickey3Body(){
     ctx.fillStyle = "black"
@@ -105,6 +139,22 @@ ctx.fillRect(9 * UNIT, 22 * UNIT, 4 * UNIT, UNIT);
 ctx.fillRect(6 * UNIT, 23 * UNIT, 4 * UNIT, UNIT);
 ctx.fillRect(5 * UNIT, 22 * UNIT, UNIT, UNIT);
 ctx.fillRect(6 * UNIT, 21 * UNIT, UNIT, UNIT);
+
+ctx.fillStyle = "#ED3833"
+ctx.fillRect(10 * UNIT, 19 * UNIT, 3 * UNIT, 2 * UNIT);
+ctx.fillRect(9 * UNIT, 20 * UNIT, 3 * UNIT, 2 * UNIT);
+ctx.fillRect(6 * UNIT, 20 * UNIT, 2 * UNIT, UNIT);
+ctx.fillRect(7 * UNIT, 21 * UNIT, 2 * UNIT, 2 * UNIT);
+ctx.fillRect(6 * UNIT, 22 * UNIT, UNIT, UNIT);
+ctx.fillStyle = "#FEF851"
+ctx.fillRect(5 * UNIT, 18 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(8 * UNIT, 18 * UNIT, UNIT, 2 * UNIT);
+}
+
+
+
+function drawMickey3Shoes(){
+    ctx.fillStyle = "#AB2622" //do right shoe outline when i get back
 ctx.fillRect(2 * UNIT, 24 * UNIT, 3 * UNIT, UNIT);
 ctx.fillRect(UNIT, 25 * UNIT, 2 * UNIT, 3 * UNIT);
 ctx.fillRect(5 * UNIT, 26 * UNIT, UNIT, UNIT);
@@ -113,19 +163,47 @@ ctx.fillRect(7 * UNIT, 28 * UNIT, UNIT, UNIT);
 ctx.fillRect(8 * UNIT, 29 * UNIT, UNIT, 2 * UNIT);
 ctx.fillRect( UNIT, 28 * UNIT, UNIT, 2 * UNIT);
 ctx.fillRect(3 * UNIT, 28 * UNIT, UNIT, 2 * UNIT);
-ctx.fillRect(2 * UNIT, 15 * UNIT, UNIT, 2 * UNIT);
 ctx.fillRect(2 * UNIT, 30 * UNIT, UNIT, UNIT);
 ctx.fillRect(4 * UNIT, 30 * UNIT, UNIT, UNIT);
+ctx.fillRect(19 * UNIT, 18 * UNIT, 2 * UNIT, UNIT);
+ctx.fillRect(17 * UNIT, 19 * UNIT, UNIT, UNIT);
+ctx.fillRect(16 * UNIT, 20 * UNIT, UNIT, UNIT);
+ctx.fillRect(15 * UNIT, 21 * UNIT, UNIT, UNIT);
+ctx.fillRect(14 * UNIT, 22 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(15 * UNIT, 24 * UNIT, 3 * UNIT, UNIT);
+ctx.fillRect(18 * UNIT, 23 * UNIT, 2 * UNIT, UNIT);
+ctx.fillRect(20 * UNIT, 22 * UNIT, 2 * UNIT, UNIT);
+ctx.fillRect(22 * UNIT, 20 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(21 * UNIT, 19 * UNIT, UNIT, UNIT);
+
+ctx.fillStyle = "#FEF851"
+ctx.fillRect(4 * UNIT, 26 * UNIT, UNIT, 3 * UNIT);
+ctx.fillRect(5 * UNIT, 27 * UNIT, UNIT, 3 * UNIT);
+ctx.fillRect(6 * UNIT, 28 * UNIT, UNIT, 3 * UNIT);
+
+ctx.fillRect(18 * UNIT, 20 * UNIT, 3 * UNIT, 2 * UNIT);
+ctx.fillRect(17 * UNIT, 21 * UNIT, 2 * UNIT, 2 * UNIT);
+ctx.fillRect(16 * UNIT, 22 * UNIT, UNIT,UNIT);
+ctx.fillRect(20 * UNIT, 19 * UNIT, UNIT, UNIT);
+ctx.fillRect(21 * UNIT, 20 * UNIT, UNIT, UNIT);
+
+ctx.fillStyle = "#F5AA41"
+ctx.fillRect(3 * UNIT, 25 * UNIT, UNIT, 3 * UNIT);
+ctx.fillRect(4 * UNIT, 25 * UNIT, UNIT, UNIT);
+ctx.fillRect(2 * UNIT, 28 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(7 * UNIT, 29 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(4 * UNIT, 29 * UNIT, UNIT, UNIT);
+ctx.fillRect(3 * UNIT, 30 * UNIT, UNIT, UNIT);
+ctx.fillRect(5 * UNIT, 30 * UNIT, UNIT, UNIT);
+ctx.fillRect(18 * UNIT, 19 * UNIT, 2 * UNIT, UNIT);
+ctx.fillRect(17 * UNIT, 20 * UNIT, UNIT, UNIT);
+ctx.fillRect(16 * UNIT, 21 * UNIT, UNIT, UNIT);
+ctx.fillRect(15 * UNIT, 22 * UNIT, UNIT, 2 * UNIT);
+ctx.fillRect(16 * UNIT, 23 * UNIT, 2 * UNIT, UNIT);
+ctx.fillRect(19 * UNIT, 22 * UNIT, UNIT, UNIT);
+ctx.fillRect(21 * UNIT, 21 * UNIT, UNIT, UNIT);
+
 }
-
-
-
-function drawMickey3Shoes(){
-
-}
-
-
-
 
 
 function drawMickey2Clothes(){
