@@ -61,11 +61,51 @@ function drawMickey4(x,y,s) {
     drawMickey1FaceDetails();
     drawMickey1FaceOutline();
     drawMickey1FaceColour();
-    ctx.translate(-3 * UNIT, -UNIT);//idk what is happening here 
+    ctx.translate(-3 * UNIT, -UNIT);
 drawMickey4Body();
+ctx.translate(-3 *UNIT, 3*UNIT);
 drawMickey3Gloves();
-
+ctx.translate(3 *UNIT, -3*UNIT);
+ctx.restore();
 }
+
+function drawMickey5(x,y,s) {
+    ctx.save();
+    ctx.scale(s, s);
+    ctx.translate(x*UNIT, y*UNIT);
+    ctx.fillStyle = "black"
+    ctx.translate(4*UNIT, 2*UNIT);
+    drawMickey1LeftEar();
+    drawMickey1BackHead();
+    drawMickey1FaceDetails();
+    drawMickey1FaceOutline();
+    drawMickey1FaceColour();
+    ctx.translate(-4*UNIT, -2*UNIT);
+    ctx.translate(-7 *UNIT, 2*UNIT);
+drawMickey3Gloves();
+ctx.translate(7 *UNIT, -2*UNIT);
+    ctx.restore();
+}
+
+function drawMickey6(x,y,s) {
+    ctx.save();
+    ctx.scale(s, s);
+    ctx.translate(x*UNIT, y*UNIT);
+    ctx.fillStyle = "black"
+    ctx.translate(2*UNIT, 0);
+    drawMickey1LeftEar();
+    drawMickey1BackHead();
+    drawMickey1FaceDetails();
+    drawMickey1FaceOutline();
+    drawMickey1FaceColour();
+    ctx.translate(-2*UNIT, 0);
+    ctx.translate(-10*UNIT, UNIT);
+    drawMickey3Gloves();
+    ctx.translate(10*UNIT, -UNIT);
+    ctx.restore();
+}
+
+
 
 function drawMickey4Body(){
 ctx.fillStyle = "black"
