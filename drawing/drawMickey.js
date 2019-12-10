@@ -275,7 +275,7 @@ function drawMickey2Clothes(){
 }
 
 function drawMickey2Shoes(){ //this one is also shifted
-    ctx.fillStyle = "#AB2622"
+    ctx.fillStyle = "#AB2622" 
 ctx.fillRect(UNIT, 24 * UNIT, 4 * UNIT,  UNIT);
 ctx.fillRect(0 , 25 * UNIT, UNIT, 3 * UNIT); //When I put in 0 it actually appears on the drawing as 1 and the actual unit should be 1 but i PUT 0 to make it look right.
 ctx.fillRect( UNIT, 28 * UNIT, UNIT, 2*UNIT);
@@ -509,7 +509,7 @@ function drawMickey1Shoes(){
     ctx.fillStyle = "#FEF851"
     ctx.fillRect(2 * UNIT, 28 * UNIT, 5 * UNIT, 3 * UNIT);
     ctx.fillRect(12 * UNIT, 28 * UNIT, 4 * UNIT, 3 * UNIT);
-    ctx.fillStyle = "#F54A41"
+    ctx.fillStyle = "#AB2622"
     ctx.fillRect(0, 29 * UNIT, UNIT, 2 * UNIT);
     ctx.fillRect(UNIT, 28 * UNIT, UNIT, UNIT);
     ctx.fillRect(2 * UNIT, 27 * UNIT, 3 * UNIT, UNIT);

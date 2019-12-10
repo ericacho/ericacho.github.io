@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../drawing/drawName.js"></script>
+<script src="../drawing/drawMickey.js"></script>
+<script src="../drawing/drawRuler.js"></script>
+<script>
+    var canvas;
+    var ctx;
+    var requestId;
+    var positionX = 0;
+    var time = 0;
+    const MAX_TIME = 50;
+    const UNIT = 10;
+    window.onload = init;
+    function init(){
+        canvas = document.getElementById("myCanvas");
+        ctx = canvas.getContext("2d");
+        requestId = requestAnimationFrame(animationLoop) ;
+    } 
+    function animationLoop() {
+        ctx.clearRect (0,0,canvas.width, canvas.height);
+        changeTime();
+        drawBackground();
+        drawName(0,0,0.3);
+        animateMickey();
+        requestId = requestAnimationFrame (animationLoop);
+    }
+
+    function changeTime() {
+        if (time >= MAX_TIME) {
+            time = 0;
+        } else {
+            time += 1; 
+        }
+    }
+
+    function drawBackground() {
+                //entire background
+                ctx.fillStyle = "#98ffcc"
+                ctx.fillRect(0,0,canvas.width, canvas.height)
+                //ground
+                ctx.fillStyle = "#00008b"
+                ctx.fillRect(0,canvas.height-50,canvas.width,50);
+            }
+       
+function animateMickey() {
+    if (time < MAX_TIME/2) {
+        drawMickey1(50,44,1);
+    } else if (MAX_TIME/2 <= time && time <= MAX_TIME) {
+        drawMickey2(50,44,1);
+    }
+}
+    </script>
+    </head>
+    <body>
+        <header>
+            <h1>Walk</h1>
+        </header>
+        <nav>
+            <a></a>
+        </nav>
+        <section>
+            <canvas id="myCanvas" width="1000" height="800"></canvas>
+        </section>
+    </body>
+</html>
